@@ -1,98 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
-    <title>Registration</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            background: #f2f2f2;
-        }
-
-        .form-container {
-            width: 350px;
-            margin: 50px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
-
-        input[type="submit"] {
-            width: 100%;
-            padding: 12px;
-            background: green;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .google-btn {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid red;
-            background: white;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-
-        .facebook-btn {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid blue;
-            background: white;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-    </style>
-
+    <title>GreenShop</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-<div class="form-container">
+<div class="container">
 
-    <h2>Login | Register</h2>
-    <p>Enter your email and password to register.</p>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">GREENSHOP</div>
 
-    <form>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Plant Care</a>
+            <a href="#">Blogs</a>
+        </nav>
 
-        Username<br>
-        <input type="text" placeholder="Enter username">
+        <div class="login">
+            <a href="registration.html">Login</a>
+        </div>
+    </header>
 
-        Email<br>
-        <input type="email" placeholder="Enter email">
 
-        Password<br>
-        <input type="password" placeholder="Enter password">
+    <!-- HERO SECTION -->
+    <section class="hero">
 
-        Confirm Password<br>
-        <input type="password" placeholder="Confirm password">
+        <div class="hero-text">
+            <p class="small-text">WELCOME TO GREENSHOP</p>
+            <h1>
+                LET’S MAKE A BETTER
+                <span>PLANET</span>
+            </h1>
 
-        <input type="submit" value="Register">
+            <p class="description">
+                We are an online plant shop offering a wide range of cheap
+                and trendy plants. Use our plants to create a unique
+                Urban Jungle.
+            </p>
 
-    </form>
+            <button class="btn">SHOP NOW</button>
+        </div>
 
-    <p>Or register with</p>
+        <div class="hero-image">
+            <img src="images/plant.png" alt="plant">
+        </div>
 
-    <input type="button" value="Continue with Google" class="google-btn">
-    <input type="button" value="Continue with Facebook" class="facebook-btn">
+    </section>
 
 </div>
 
