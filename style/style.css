@@ -1,97 +1,166 @@
+/* fonts */
+
+@font-face {
+font-family: "Cera Pro";
+src: url("../fonts/CeraPro-Regular.woff");
+font-weight: 400;
+}
+
+@font-face {
+font-family: "Cera Pro";
+src: url("../fonts/CeraPro-Bold.woff");
+font-weight: 700;
+}
+
 body{
 margin:0;
 font-family:"Cera Pro", sans-serif;
+background:#ffffff;
 }
 
-.header{
+/* layout */
+
+.wrapper{
 width:1200px;
-height:53px;
-margin:auto;
-display:flex;
-align-items:center;
+margin:0 auto;
+position:relative;
 }
 
-.logo{
-width:150px;
+/* categories */
+
+.categories{
+width:310px;
+background:#FBFBFB;
+display:inline-block;
+vertical-align:top;
+padding:20px;
 }
 
-.menu{
-margin-left:200px;
+.categories ul{
+list-style:none;
+padding:0;
 }
 
-.menu a{
-margin-right:40px;
-text-decoration:none;
-color:#3D3D3D;
-font-size:16px;
+.categories li{
+line-height:40px;
+font-size:15px;
 }
 
-.menu .active{
+/* первый пункт списка */
+
+.categories li:first-child{
+color:#46A358;
 font-weight:700;
 }
-
-.login{
-margin-left:auto;
-width:100px;
-height:35px;
-background:#46A358;
-border:none;
-color:white;
-border-radius:6px;
-font-size:16px;
-}
-
-.banner{
-width:1200px;
-height:450px;
-margin:auto;
-display:flex;
-align-items:center;
-background:linear-gradient(#F5F5F5,#F5F5F5);
-}
-
-.text{
-width:557px;
-}
-
-.welcome{
-font-size:14px;
-letter-spacing:10%;
-font-weight:500;
-text-transform:uppercase;
-}
-
-h1{
-font-size:70px;
-font-weight:900;
-line-height:70px;
-text-transform:uppercase;
-color:#3D3D3D;
-}
-
-h1 span{
-color:#46A358;
-}
-
-.description{
-font-size:14px;
-line-height:24px;
-color:#3D3D3D;
-margin-bottom:20px;
-}
+/* shop */
 
 .shop{
-width:140px;
-height:40px;
-background:#46A358;
-border:none;
-color:white;
-font-size:16px;
-font-weight:700;
-border-radius:6px;
+display:inline-block;
+width:850px;
+vertical-align:top;
+margin-left:30px;
 }
 
-.image img{
-width:507px;
-margin-left:100px;
+
+/* filters */
+
+.filters{
+margin-bottom:30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.filters span{
+margin-right:30px;
+font-size:15px;
+cursor:pointer;
+}
+
+.filters .active{
+color:#46A358;
+font-weight:700;
+border-bottom:2px solid #46A358;
+padding-bottom:5px;
+}
+
+.sort{
+font-size:15px;
+}
+
+/* cards */
+
+.card{
+width:258px;
+height:350px;
+display:inline-block;
+margin-right:30px;
+margin-bottom:30px;
+text-align:center;
+vertical-align:top;
+font-size:16px;
+}
+
+.card:nth-child(3n){
+margin-right:0;
+}
+
+.card img{
+width:250px;
+height:250px;
+}
+
+.cards{
+font-size:0;
+width:850px;
+}
+
+.name{
+font-size:16px;
+}
+
+.price{
+color:#46A358;
+font-weight:700;
+}
+
+/* sale banner */
+
+.sale-banner{
+position:absolute;
+width:330px;
+height:430px;
+top:700px;
+left:20px;
+}
+
+.sale-banner img{
+width:100%;
+height:100%;
+}
+
+/* pagination */
+
+.pagination{
+text-align:right;
+margin-top:40px;
+}
+
+.page{
+display:inline-block;
+width:35px;
+height:35px;
+line-height:35px;
+text-align:center;
+border:1px solid #E5E5E5;
+margin-left:10px;
+border-radius:4px;
+font-size:14px;
+cursor:pointer;
+}
+
+.page.active{
+background:#46A358;
+color:white;
+border:1px solid #46A358;
 }
