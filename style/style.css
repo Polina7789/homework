@@ -1,0 +1,203 @@
+@font-face {
+font-family: "Cera Pro";
+src: url("../fonts/CeraPro-Regular.woff") format("woff");
+font-weight: 400;
+}
+
+@font-face {
+font-family: "Cera Pro";
+src: url("../fonts/CeraPro-Medium.woff") format("woff");
+font-weight: 500;
+}
+
+@font-face {
+font-family: "Cera Pro";
+src: url("../fonts/CeraPro-Bold.woff") format("woff");
+font-weight: 700;
+}
+body{
+font-family: "Cera Pro", sans-serif;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Cera Pro",sans-serif;
+background:#FFFFFF;
+display:flex;
+justify-content:center;
+}
+
+.page{
+width:1440px;
+height:1024px;
+background:#fff;
+}
+
+.content{
+width:1202px;
+margin:0 auto;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:70px;
+padding:0 120px;
+}
+
+.login{
+text-decoration:none;
+color:#46A358;
+font-weight:600;
+}
+
+/* PROMO BLOCKS */
+
+.promo{
+display:flex;
+justify-content:space-between;
+margin-top:30px;
+}
+
+.promo-card{
+width:586px;
+height:302px;
+background:#FBFBFB;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+}
+
+.promo-img{
+width:289px;
+height:287px;
+mix-blend-mode:multiply;
+}
+
+.promo-text{
+display:flex;
+flex-direction:column;
+align-items:flex-end;
+text-align:right;
+gap:12px;
+width: 260px;
+}
+
+.promo-text h3{
+font-size:18px;
+}
+
+.promo-text p{
+font-size:14px;
+color:#777;
+}
+
+.promo-text button{
+width:140px;
+height:40px;
+background:#46A358;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* BLOG */
+
+.blog{
+width:1201px;
+margin-top:50px;
+}
+
+.blog h2{
+text-align:center;
+margin-bottom:10px;
+}
+
+.blog-sub{
+text-align:center;
+color:#777;
+margin-bottom:40px;
+}
+
+.blog-cards{
+display:flex;
+justify-content:space-between;
+}
+
+.blog-card{
+width:268px;
+height:362px;
+display:flex;
+flex-direction:column;
+gap:10px;
+justify-content:space-between;
+}
+
+.blog-card img{
+width:268px;
+height:195px;
+object-fit:cover;
+}
+
+.date{
+font-size:12px;
+color:#46A358;
+}
+
+.blog-card h4{
+font-size:16px;
+}
+
+.blog-card p{
+font-size:14px;
+color:#666;
+}
+
+.blog-card a{
+color:#020302;
+text-decoration:none;
+font-size:14px;
+}
+
+.blog-card:nth-child(3) a{
+color: #46A358;
+}
+/* REGISTRATION */
+
+.register-page{
+width:400px;
+margin:150px auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.form input{
+height:40px;
+padding-left:10px;
+border:1px solid #ccc;
+}
+
+.form button{
+height:40px;
+background:#46A358;
+border:none;
+color:white;
+border-radius:6px;
+}
